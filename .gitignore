@@ -12,3 +12,6 @@ dataset/.gitattributes
 
 # notebooks
 .ipynb_checkpoints/
+
+# agent scratch space
+agent_space/

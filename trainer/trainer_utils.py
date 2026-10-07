@@ -82,7 +82,8 @@ def lm_checkpoint(lm_config, weight='full_sft', model=None, optimizer=None, epoc
                 run = wandb.get_run()
                 wandb_id = getattr(run, 'id', None) if run else None
             else:
-                wandb_id = getattr(wandb, 'id', None)
+                run = getattr(wandb, 'run', None)
+                wandb_id = getattr(run, 'id', None) if run else None
 
         resume_data = {
             'model': state_dict,
