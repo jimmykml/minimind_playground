@@ -4,3 +4,11 @@ __pycache__/
 out
 website/
 docs-minimind/
+# datasets (downloaded from ModelScope, large)
+dataset/*.jsonl
+dataset/images/
+dataset/README.md
+dataset/.gitattributes
+
+# notebooks
+.ipynb_checkpoints/
